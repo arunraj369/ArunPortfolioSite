@@ -1,38 +1,44 @@
 import React from "react";
 import { Link } from "react-router-dom";
-
+import "./Header.css";
 const Header = () => {
   return (
-    <nav className="navbar navbar-expand-lg navbar-light bg-light">
-      <Link className="navbar-brand" to="/">
-        Your Logo
+    <nav
+      className="navbar navbar-expand-lg "
+      style={{ backgroundColor: "#e3f2fd" }}
+    >
+      <Link className="navbar-brand " to="/" style={{ marginLeft: "10%" }}>
+        <h3>Arunraj</h3>
       </Link>
       <button
-        className="navbar-toggler"
+        class="navbar-toggler"
         type="button"
         data-toggle="collapse"
         data-target="#navbarNav"
-        aria-controls="navbarNav"
+        aria-controls="navbarToggleExternalContent"
         aria-expanded="false"
         aria-label="Toggle navigation"
       >
-        <span className="navbar-toggler-icon"></span>
+        <span class="navbar-toggler-icon"></span>
       </button>
-      <div className="collapse navbar-collapse" id="navbarNav">
-        <ul className="navbar-nav">
-          <li className="nav-item">
+      <div
+        className="collapse navbar-collapse justify-content-end"
+        id="navbarNav"
+      >
+        <ul className="navbar-nav " style={{ marginRight: "10%" }}>
+          <li className="nav-item ">
             <Link className="nav-link" to="/Home">
-              Home
+              <h6> Home</h6>
             </Link>
           </li>
           <li className="nav-item">
-            <Link className="nav-link" to="/about">
-              About
+            <Link className="nav-link" to="/Portfolio">
+              <h6> Portfolio</h6>
             </Link>
           </li>
           <li className="nav-item">
             <Link className="nav-link" to="/contact">
-              Contact
+              <h6>Contact</h6>
             </Link>
           </li>
         </ul>
