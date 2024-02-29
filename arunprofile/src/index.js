@@ -7,6 +7,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Portfolio from "./Components/Portfolio/Portfolio";
 import Home from "./Components/Home/Home";
 import Contact from "./Components/Contact/Contact";
+import Experience from "./Components/Experience/Experience";
 // Bootstrap CSS
 import "bootstrap/dist/css/bootstrap.min.css";
 // Bootstrap Bundle JS
@@ -20,6 +21,7 @@ root.render(
       <Route path="/home" element={<Home />} />
       <Route path="/Portfolio" element={<Portfolio />} />
       <Route path="/Contact" element={<Contact />} />
+      <Route path="/Experience" element={<Experience />} />
     </Routes>
   </BrowserRouter>
 );

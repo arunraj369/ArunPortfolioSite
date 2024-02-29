@@ -10,6 +10,10 @@ function Home() {
     // alert("onclick working");
     navigate("/portfolio");
   }
+  function navigateToExperience() {
+    // alert("onclick working");
+    navigate("/Experience");
+  }
 
   return (
     <div className="body">
@@ -44,6 +48,7 @@ function Home() {
           type="button"
           className="btn btn-outline-info"
           style={{ color: "black" }}
+          onClick={navigateToExperience}
         >
           <h6>Experience</h6>
         </button>

@@ -66,7 +66,7 @@ function About() {
     <div>
       <Header />
       <div className="container" style={{ height: "100%" }}>
-        <div className="card">
+        <div className="card" style={{ border: "none" }}>
           <h1>Arunraj</h1>
           <p style={{ color: "#4F7396", marginLeft: "5px" }}>
             Fullstack Developer
