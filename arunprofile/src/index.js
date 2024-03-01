@@ -8,6 +8,7 @@ import Portfolio from "./Components/Portfolio/Portfolio";
 import Home from "./Components/Home/Home";
 import Contact from "./Components/Contact/Contact";
 import Experience from "./Components/Experience/Experience";
+import Projects from "./Components/Projects/Projects";
 // Bootstrap CSS
 import "bootstrap/dist/css/bootstrap.min.css";
 // Bootstrap Bundle JS
@@ -22,6 +23,7 @@ root.render(
       <Route path="/Portfolio" element={<Portfolio />} />
       <Route path="/Contact" element={<Contact />} />
       <Route path="/Experience" element={<Experience />} />
+      <Route path="/Projects" element={<Projects />} />
     </Routes>
   </BrowserRouter>
 );

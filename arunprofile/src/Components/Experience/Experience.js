@@ -21,7 +21,14 @@ function Experience() {
       id: 2,
 
       Role: "Backend Developer",
-      Date: "Sep -2023 to Nov ",
+      Date: "Sep -2023 to Till now ",
+      Location: "Salem,Tamilnadu",
+    },
+    {
+      id: 2,
+
+      Role: "Backend Developer",
+      Date: "Sep -2023 to Till now ",
       Location: "Salem,Tamilnadu",
     },
   ];

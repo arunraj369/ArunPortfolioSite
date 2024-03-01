@@ -68,14 +68,14 @@ function About() {
       <div className="container" style={{ height: "100%" }}>
         <div className="card" style={{ border: "none" }}>
           <h1>Arunraj</h1>
-          <p style={{ color: "#4F7396", marginLeft: "5px" }}>
+          <p style={{ color: "#4F7396", marginLeft: "13px" }}>
             Fullstack Developer
           </p>
-          <p style={{ color: "#4F7396", marginLeft: "5px" }}>TamilNadu</p>
+          <p style={{ color: "#4F7396", marginLeft: "13px" }}>TamilNadu</p>
         </div>
         <div className="Biocard">
           <h3>Bio</h3>
-          <p style={{ marginLeft: "5px" }}>
+          <p style={{ marginLeft: "20px" }}>
             I'm a Fullstack developer with a passion for building beautiful and
             functional web experiences. Currently, I work at a Asm technology in
             Salem, where I get to wear many hats and work across the stack. I
@@ -98,6 +98,7 @@ function About() {
                   width: "15rem",
                   margin: "0.5rem",
                   backgroundColor: "#D1DBE8",
+                  marginLeft: "8%",
                 }}
               >
                 <div className="card-body">
