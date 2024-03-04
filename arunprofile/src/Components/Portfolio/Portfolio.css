@@ -4,8 +4,19 @@
   /* margin-left: 10%; */
 }
 .container {
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
-    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
   padding-top: 20px;
-  /* background-color: aqua; */
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px,
+    rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+
+  background-color: white;
+  /* background-image: linear-gradient(to right, #c5adc5, #b2b5e0); */
+}
+.card-body {
+  transition: box-shadow 0.3s ease; /* Add transition for smoother effect */
+}
+
+.card-body:hover {
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px,
+    rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px,
+    rgba(49, 149, 215, 0.4) 0px 0px 0px 2px; /* Add additional shadow for hover effect */
 }

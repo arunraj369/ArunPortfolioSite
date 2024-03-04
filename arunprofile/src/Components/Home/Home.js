@@ -10,24 +10,36 @@ function Home() {
     // alert("onclick working");
     navigate("/portfolio");
   }
-  function navigateToExperience() {
-    // alert("onclick working");
-    navigate("/Experience");
-  }
+  // function navigateToExperience() {
+  //   // alert("onclick working");
+  //   navigate("/Experience");
+  // }
+  // function navigateToContact() {
+  //   navigate("/Contact");
+  // }
+  // function navigateToProject() {
+  //   navigate("/Projects");
+  // }
+  // function navigateToPortfolio() {
+  //   navigate("/Portfolio");
+  // }
 
   return (
-    <div className="body">
+    <div
+      className="body"
+      style={{ backgroundImage: "linear-gradient(to right, white, #E9F1FA)" }}
+    >
       <Header />
 
       <div
         className="container background-image d-flex flex-column justify-content-end"
         style={{ color: "white" }}
       >
-        <h3>Hi I'm Arunraj </h3>
-        <p>
+        <h3 style={{ color: "grey" }}>Hi I'm Arunraj </h3>
+        <h6>
           Iam a Fullstack developer based on Salem .I am passionate about
           building high-quality web applications with modern technologies.
-        </p>
+        </h6>
         <button
           type="button"
           class="btn btn-primary portfolio_btn mb-5"
@@ -37,16 +49,26 @@ function Home() {
         </button>
       </div>
 
-      <div
-        className="container "
+      {/* <div
+        className="container justify-content-center"
         style={{
           height: "10%",
-          borderRadius: "10px",
+          // borderRadius: "10px",
+          backgroundColor: "transparent",
+          border: "none",
         }}
       >
         <button
           type="button"
-          className="btn btn-outline-info"
+          className="btn "
+          style={{ color: "black" }}
+          onClick={navigateToPortfolio}
+        >
+          <h6>Portfolio</h6>
+        </button>
+        <button
+          type="button"
+          className="btn "
           style={{ color: "black" }}
           onClick={navigateToExperience}
         >
@@ -54,19 +76,21 @@ function Home() {
         </button>
         <button
           type="button"
-          className="btn btn-outline-info ml-5"
+          className="btn "
           style={{ color: "black" }}
+          onClick={navigateToProject}
         >
-          <h6>Project</h6>
+          <h6>Projects</h6>
         </button>
         <button
           type="button"
-          className="btn btn-outline-info ml-5 "
+          className="btn  "
           style={{ color: "black" }}
+          onClick={navigateToContact}
         >
           <h6>Contact</h6>
         </button>
-      </div>
+      </div> */}
     </div>
   );
 }

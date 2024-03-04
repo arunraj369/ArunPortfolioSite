@@ -2,6 +2,7 @@ import React from "react";
 import Header from "../Header/Header";
 import Flipkart from "../assets/flipkart.jpg";
 import Netflix from "../assets/Netflix.jpg";
+import Weather from "../assets/weather.png";
 import "./Project.css";
 function Projects() {
   const projects_details = [
@@ -9,8 +10,8 @@ function Projects() {
       id: 1,
       Project_name: "Netflix Clone",
       Tech_used: "Angular,Mock API, HTML ,CSS",
-      Url: "www.flipkart.com",
-      Git_url: "www.git.com",
+      Url: "www.Netflix.com",
+      Git_url: "https://github.com/arunraj369/netflix-clone-in-angular",
       Image_link: Netflix,
       Detail:
         "A Netflix app to watch movies we can see popular movies in this app  ",
@@ -20,15 +21,27 @@ function Projects() {
       Project_name: "Flipkart Clone",
       Tech_used: "Angular,Mock API, HTML ,CSS",
       Url: "www.flipkart.com",
-      Git_url: "www.git.com",
+      Git_url: "https://github.com/arunraj369/ebay",
       Image_link: Flipkart,
       Detail:
         "Flipkart app is used to purchase product and Add product in cart ",
     },
+    {
+      id: 3,
+      Project_name: "Weather app",
+      Tech_used: "Angular,Mock API, HTML ,CSS",
+      Url: "www.flipkart.com",
+      Git_url: "https://github.com/arunraj369/weather-app",
+      Image_link: Weather,
+      Detail:
+        "Weather app is used to check temperature,humidity,pressure by city wise",
+    },
   ];
 
   return (
-    <div>
+    <div
+      style={{ backgroundImage: "linear-gradient(to right, white, #E9F1FA)" }}
+    >
       <Header />
       <div className="container" style={{ height: "100%" }}>
         {/* <h1 style={{ textAlign: "center" }}>Projects</h1> */}

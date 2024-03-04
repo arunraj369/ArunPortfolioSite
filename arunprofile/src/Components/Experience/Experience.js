@@ -1,8 +1,8 @@
 import React from "react";
 import Header from "../Header/Header";
 // import Ex from "./Experience.css";
-import AvatarEditor from "react-avatar-editor";
-import logo from "../assets/Arunphoto.jpg";
+// import AvatarEditor from "react-avatar-editor";
+import logo from "../assets/Aruncrop.png";
 import bag from "../assets/bag.png";
 import line from "../assets/line.png";
 import degree from "../assets/degree.png";
@@ -21,14 +21,14 @@ function Experience() {
       id: 2,
 
       Role: "Backend Developer",
-      Date: "Sep -2023 to Till now ",
+      Date: "Sep -2023 to Dec-2023",
       Location: "Salem,Tamilnadu",
     },
     {
-      id: 2,
+      id: 3,
 
-      Role: "Backend Developer",
-      Date: "Sep -2023 to Till now ",
+      Role: "Fullstack Developer",
+      Date: "Dec-2023 to Till now ",
       Location: "Salem,Tamilnadu",
     },
   ];
@@ -67,12 +67,28 @@ function Experience() {
     },
   ];
 
+  function downloadResume() {
+    // Specify the file URL you want to download
+    var resumeUrl = "../assests/resume.pdf";
+
+    // Create a temporary anchor element
+    var link = document.createElement("a");
+    link.href = resumeUrl;
+
+    // Set the download attribute and trigger a click event
+    link.download = "resume.pdf";
+    link.click();
+    alert("downloading");
+  }
+
   return (
-    <div>
+    <div
+      style={{ backgroundImage: "linear-gradient(to right, white, #E9F1FA)" }}
+    >
       <Header />
       <div className="container" style={{ height: "100%" }}>
         <div className="d-flex flex-row" style={{ marginLeft: "13%" }}>
-          <div
+          {/* <div
             style={{
               borderRadius: "50%",
               overflow: "hidden",
@@ -88,13 +104,26 @@ function Experience() {
               scale={1.2}
               rotate={0}
             />
-          </div>
+          </div> */}
+          <img
+            src={logo}
+            alt="description_of_your_image"
+            style={{ borderRadius: "50%", width: "140px", height: "140px" }}
+          />
+
           <div className="d-flex flex-column ml-4">
             <h1 style={{ display: "inline-block" }}>Arunraj V</h1>
             <p style={{ display: "inline-block", color: "#4F7396" }}>
               Front-end Developer
             </p>
-            <button type="button" className="btn btn-primary">
+            {/* <button type="button" className="btn btn-primary">
+              Resume
+            </button> */}
+            <button
+              type="button"
+              class="btn btn-primary"
+              onclick={downloadResume}
+            >
               Resume
             </button>
           </div>
