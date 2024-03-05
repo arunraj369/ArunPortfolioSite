@@ -87,6 +87,15 @@ function Experience() {
     >
       <Header />
       <div className="container" style={{ height: "100%" }}>
+        <h2
+          style={{
+            textDecoration: "underline",
+            textAlign: "center",
+            marginBottom: "3%",
+          }}
+        >
+          𝕰𝖝𝖕𝖊𝖗𝖎𝖊𝖓𝖈𝖊
+        </h2>
         <div className="d-flex flex-row" style={{ marginLeft: "13%" }}>
           {/* <div
             style={{
@@ -133,7 +142,7 @@ function Experience() {
 
         {/* Experience */}
         <div className="mt-5" style={{ marginLeft: "13%", marginTop: "2%" }}>
-          <h4>Experience</h4>
+          <h4 style={{ marginBottom: "2%" }}>Experience</h4>
           <div>
             {Object.values(Experience_data).map((Exdata, index) => (
               <div key={index.id} className="d-flex flex-row">
@@ -170,7 +179,7 @@ function Experience() {
         </div>
         {/* Education code */}
         <div style={{ marginLeft: "13%", marginTop: "2%" }}>
-          <h4>Education</h4>
+          <h4 style={{ marginBottom: "2%" }}>Education</h4>
           <div>
             {Object.values(Education).map((edu, index) => (
               <div key={index.id} className="d-flex flex-row">
@@ -210,7 +219,7 @@ function Experience() {
         </div>
         {/* Certification code */}
         <div style={{ marginLeft: "13%", marginTop: "2%" }}>
-          <h4>Certification</h4>
+          <h4 style={{ marginBottom: "2%" }}>Certification</h4>
           <div>
             {Object.values(Certification).map((cer, index) => (
               <div key={index.id} className="d-flex flex-row">

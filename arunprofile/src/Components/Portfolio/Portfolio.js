@@ -58,29 +58,47 @@ function About() {
     >
       <Header />
       <div className="container" style={{ height: "100%" }}>
+        <h2
+          style={{
+            textDecoration: "underline",
+            textAlign: "center",
+            marginBottom: "3%",
+          }}
+        >
+          𝖕𝖔𝖗𝖙𝖋𝖔𝖑𝖎𝖔
+        </h2>
         <div
           className="card"
           style={{ border: "none", backgroundColor: "white" }}
         >
           <h1>Arunraj V</h1>
-          <h6 style={{ color: "#4F7396", marginLeft: "13px" }}>
-            Fullstack Developer
-          </h6>
-          <h6 style={{ color: "#4F7396", marginLeft: "13px" }}>TamilNadu</h6>
+          <h6 style={{ color: "#4F7396" }}>Fullstack Developer</h6>
+          <h6 style={{ color: "#4F7396" }}>TamilNadu</h6>
         </div>
         <div className="Biocard">
-          <h3>Bio</h3>
-          <h6 style={{ marginLeft: "20px" }}>
-            I'm a Fullstack developer with a passion for building beautiful and
-            functional web experiences. Currently, I work at a Asm technology in
-            Salem, where I get to wear many hats and work across the stack. I
-            love the process of creating something from nothing and seeing it
-            come to life on the web. In my free time, you can find me exploring
-            the city, trying new coffee shops, or working on side projects.
+          <h4 className="mt-3 ml-3" style={{ textDecoration: "underline" }}>
+            Bio
+          </h4>
+          <h6
+            style={{
+              marginLeft: "20px",
+              // fontFamily: "Arial, sans-serif",
+              fontFamily: "system-ui",
+            }}
+          >
+            &emsp;I'm a Fullstack developer with a passion for building
+            beautiful and functional web experiences. Currently, I work at a Asm
+            technology in Salem, where I get to wear many hats and work across
+            the stack. I love the process of creating something from nothing and
+            seeing it come to life on the web. In my free time, you can find me
+            exploring the city, trying new coffee shops, or working on side
+            projects.
           </h6>
         </div>
         <div>
-          <h3>Skills</h3>
+          <h4 className="mt-3 ml-3" style={{ textDecoration: "underline" }}>
+            Skills
+          </h4>
           <div
             className="card-container"
             style={{ display: "flex", flexWrap: "wrap" }}

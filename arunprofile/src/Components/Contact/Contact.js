@@ -37,6 +37,15 @@ function Contact() {
       style={{ backgroundImage: "linear-gradient(to right, white, #E9F1FA)" }}
     >
       <Header />
+      <h2
+        style={{
+          textDecoration: "underline",
+          textAlign: "center",
+          marginBottom: "3%",
+        }}
+      >
+        𝕮𝖔𝖓𝖙𝖆𝖈𝖙
+      </h2>
       <div className="contact-container d-flex flex-row">
         <div>
           <form className="contact-form" ref={form} onSubmit={sendEmail}>
@@ -45,11 +54,18 @@ function Contact() {
               I'm here to help.if you have question,feedback,please reach out
               here
             </p>
-            <label className="form-label">Your Name</label>
+            <label className="form-label" style={{ fontWeight: "bold" }}>
+              Your Name
+            </label>
+
             <input className="form-input" type="text" name="from_name" />
-            <label className="form-label">Your Email</label>
+            <label className="form-label" style={{ fontWeight: "bold" }}>
+              Your Email
+            </label>
             <input className="form-input" type="email" name="from_email" />
-            <label className="form-label">Your Message</label>
+            <label className="form-label" style={{ fontWeight: "bold" }}>
+              Your Message
+            </label>
             <textarea className="form-textarea" name="message" />
             <button className="submit-button" type="submit">
               Send
@@ -57,12 +73,16 @@ function Contact() {
           </form>
         </div>
         <div style={{ display: "inline-block", marginLeft: "5%" }}>
-          <h4>Direct contact</h4>
+          <h4 style={{ textDecoration: "underline" }}>Direct contact</h4>
           <h6>Email</h6>
           {/* <p>rajarun612@gmail.com</p> */}
           <a href="mailto:rajarun612@gmail.com">rajarun612@gmail.com</a>
+          <h6>Phone No</h6>
+          <a href="tel:8883314331">888-331-4331</a>
 
-          <h5>Follow me</h5>
+          <h4 style={{ textDecoration: "underline", marginTop: "20px" }}>
+            Follow me
+          </h4>
           <h6>Linkedin</h6>
           {/* <p>linkedin.com/in/arun-raj-b5860917b/</p> */}
           <a

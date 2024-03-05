@@ -3,6 +3,7 @@ import Header from "../Header/Header";
 import Flipkart from "../assets/flipkart.jpg";
 import Netflix from "../assets/Netflix.jpg";
 import Weather from "../assets/weather.png";
+import NEWS from "../assets/news.png";
 import "./Project.css";
 function Projects() {
   const projects_details = [
@@ -36,6 +37,15 @@ function Projects() {
       Detail:
         "Weather app is used to check temperature,humidity,pressure by city wise",
     },
+    {
+      id: 4,
+      Project_name: "NEWS app",
+      Tech_used: "Angular,Mock API, HTML ,CSS",
+      Url: "www.news.com",
+      Git_url: "https://github.com/arunraj369/Newsapp",
+      Image_link: NEWS,
+      Detail: "NEWS app is used to check daily Top news , Indian news",
+    },
   ];
 
   return (
@@ -43,8 +53,18 @@ function Projects() {
       style={{ backgroundImage: "linear-gradient(to right, white, #E9F1FA)" }}
     >
       <Header />
+
       <div className="container" style={{ height: "100%" }}>
         {/* <h1 style={{ textAlign: "center" }}>Projects</h1> */}
+        <h2
+          style={{
+            textDecoration: "underline",
+            textAlign: "center",
+            marginBottom: "3%",
+          }}
+        >
+          𝖕𝖗𝖔𝖏𝖊𝖈𝖙
+        </h2>
         <div className="">
           {Object.values(projects_details).map((Project_data, index) => (
             <div
