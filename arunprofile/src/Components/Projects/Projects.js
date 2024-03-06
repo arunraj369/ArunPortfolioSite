@@ -92,15 +92,14 @@ function Projects() {
                 {/* <h6>Technology used</h6> */}
 
                 <div className="d-flex flex-column ">
-                  <a
+                  {/* <a
                     href={Project_data.Url}
                     className="btn btn-primary"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
                     Live demo
-                  </a>
-
+                  </a> */}
                   <a
                     href={Project_data.Git_url}
                     className="btn btn-primary mt-3"
