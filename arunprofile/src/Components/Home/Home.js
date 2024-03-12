@@ -2,6 +2,7 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import Header from "../Header/Header";
 import "./Home.css";
+// import bg from "../assets/Arunphoto.jpg";
 
 function Home() {
   const navigate = useNavigate();
