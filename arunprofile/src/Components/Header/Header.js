@@ -15,9 +15,9 @@ const Header = () => {
           <Nav.Link as={Link} to="/Home">
             <h6 style={{ color: "#ffffff" }}>Home</h6>
           </Nav.Link>
-          <Nav.Link as={Link} to="/Portfolio">
+          {/* <Nav.Link as={Link} to="/Portfolio">
             <h6 style={{ color: "#ffffff" }}>Portfolio</h6>
-          </Nav.Link>
+          </Nav.Link> */}
           <Nav.Link as={Link} to="/Experience">
             <h6 style={{ color: "#ffffff" }}>Experience</h6>
           </Nav.Link>

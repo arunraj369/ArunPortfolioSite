@@ -1,97 +1,115 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
 import Header from "../Header/Header";
-import "./Home.css";
-// import bg from "../assets/Arunphoto.jpg";
+import arunimg from "../assets/Arunphoto.jpg";
 
 function Home() {
-  const navigate = useNavigate();
-
-  function naviagteToPortfolio() {
-    // alert("onclick working");
-    navigate("/portfolio");
-  }
-  // function navigateToExperience() {
-  //   // alert("onclick working");
-  //   navigate("/Experience");
-  // }
-  // function navigateToContact() {
-  //   navigate("/Contact");
-  // }
-  // function navigateToProject() {
-  //   navigate("/Projects");
-  // }
-  // function navigateToPortfolio() {
-  //   navigate("/Portfolio");
-  // }
+  const Skills = [
+    {
+      id: 0,
+      name: "Full Stack Development Program",
+      Details: "MERN stack",
+    },
+    {
+      id: 1,
+      name: "UI/UX Program",
+      Details: "Design using Figma and AI tools",
+    },
+    {
+      id: 2,
+      name: "JavaScript",
+      Details: "Able to work in JavaScript",
+    },
+    {
+      id: 3,
+      name: "Python",
+      Details: "Able to work in Python programming",
+    },
+    {
+      id: 4,
+      name: "React.js",
+      Details: "Create mobile responsive UI using React.js",
+    },
+    {
+      id: 5,
+      name: "Angular",
+      Details: "Create mobile responsive UI using Angular",
+    },
+    {
+      id: 6,
+      name: "Node.js",
+      Details: "For backend, I use Express.js in Node.js to access databases",
+    },
+    {
+      id: 7,
+      name: "SQL",
+      Details: "For table-wise data, I can use SQL databases",
+    },
+    {
+      id: 8,
+      name: "MongoDB",
+      Details: "NoSQL database is used MongoDB",
+    },
+  ];
 
   return (
-    <div
-      className="body"
-      style={{ backgroundImage: "linear-gradient(to right, white, #E9F1FA)" }}
-    >
+    <div>
       <Header />
-
-      <div
-        className="container background-image d-flex flex-column justify-content-end"
-        style={{ color: "white" }}
-      >
-        <h3 style={{ color: "grey" }}>Hi I'm Arunraj </h3>
-        <h6 style={{ color: "grey" }}>
-          Iam a Fullstack developer based on Salem .I am passionate about
-          building high-quality web applications with modern technologies.
-        </h6>
-        <button
-          type="button"
-          class="btn btn-primary portfolio_btn mb-5"
-          onClick={naviagteToPortfolio}
-        >
-          View portfolio
-        </button>
+      <div className="container">
+        <div className="row">
+          <div className="col-md d-flex align-items-center">
+            <img
+              src={arunimg}
+              alt="Not Available"
+              className="img-fluid"
+              style={{ maxHeight: "100vh", objectFit: "cover" }}
+            />
+          </div>
+          <div className="col-md">
+            <div className="card-body">
+              <h1>Arunraj V</h1>
+              <h6 className="text-muted">Fullstack Developer</h6>
+              <h6 className="text-muted">Tamil Nadu</h6>
+              <h4 className="mt-3 text-muted">Bio</h4>
+              <p className="text-muted">
+                I'm a Fullstack developer with a passion for building beautiful
+                and functional web experiences. Currently, I work at Asm
+                technology in Salem, where I get to wear many hats and work
+                across the stack. I love the process of creating something from
+                nothing and seeing it come to life on the web. In my free time,
+                you can find me exploring the city, trying new coffee shops, or
+                working on side projects.
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
 
-      {/* <div
-        className="container justify-content-center"
-        style={{
-          height: "10%",
-          // borderRadius: "10px",
-          backgroundColor: "transparent",
-          border: "none",
-        }}
-      >
-        <button
-          type="button"
-          className="btn "
-          style={{ color: "black" }}
-          onClick={navigateToPortfolio}
-        >
-          <h6>Portfolio</h6>
-        </button>
-        <button
-          type="button"
-          className="btn "
-          style={{ color: "black" }}
-          onClick={navigateToExperience}
-        >
-          <h6>Experience</h6>
-        </button>
-        <button
-          type="button"
-          className="btn "
-          style={{ color: "black" }}
-          onClick={navigateToProject}
-        >
-          <h6>Projects</h6>
-        </button>
-        <button
-          type="button"
-          className="btn  "
-          style={{ color: "black" }}
-          onClick={navigateToContact}
-        >
-          <h6>Contact</h6>
-        </button>
-      </div> */}
+      {/* Skill Mapping */}
+      <div className="container">
+        <h4 className="mt-5 mb-3" style={{ textDecoration: "underline" }}>
+          Skills
+        </h4>
+        <div className="card-container d-flex flex-wrap justify-content-center">
+          {Skills.map((skill) => (
+            <div
+              key={skill.id}
+              className="card m-2"
+              style={{
+                width: "15rem",
+                backgroundImage: "linear-gradient(to right, #000080, #000080)",
+                color: "white",
+                boxShadow:
+                  "rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px",
+              }}
+            >
+              <div className="card-body">
+                <h6 className="card-title">{skill.name}</h6>
+                <p className="card-text">{skill.Details}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
     </div>
   );
 }

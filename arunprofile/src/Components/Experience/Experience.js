@@ -7,6 +7,7 @@ import bag from "../assets/bag.png";
 import line from "../assets/line.png";
 import degree from "../assets/degree.png";
 import certificate from "../assets/certificate.png";
+import resume from "../assets/Arunraj_resume.pdf";
 
 function Experience() {
   const Experience_data = [
@@ -67,20 +68,6 @@ function Experience() {
     },
   ];
 
-  function downloadResume() {
-    // Specify the file URL you want to download
-    var resumeUrl = "../assests/resume.pdf";
-
-    // Create a temporary anchor element
-    var link = document.createElement("a");
-    link.href = resumeUrl;
-
-    // Set the download attribute and trigger a click event
-    link.download = "resume.pdf";
-    link.click();
-    alert("downloading");
-  }
-
   return (
     <div
       style={{ backgroundImage: "linear-gradient(to right, white, #E9F1FA)" }}
@@ -97,23 +84,6 @@ function Experience() {
           𝕰𝖝𝖕𝖊𝖗𝖎𝖊𝖓𝖈𝖊
         </h2>
         <div className="d-flex flex-row" style={{ marginLeft: "7%" }}>
-          {/* <div
-            style={{
-              borderRadius: "50%",
-              overflow: "hidden",
-              width: "100px",
-              height: "100px",
-            }}
-          >
-            <AvatarEditor
-              image={logo}
-              width={100}
-              height={100}
-              color={[255, 255, 255, 0.6]} // RGBA
-              scale={1.2}
-              rotate={0}
-            />
-          </div> */}
           <img
             src={logo}
             alt="description_of_your_image"
@@ -125,16 +95,10 @@ function Experience() {
             <p style={{ display: "inline-block", color: "#4F7396" }}>
               Front-end Developer
             </p>
-            {/* <button type="button" className="btn btn-primary">
+
+            <a className="btn btn-primary" href={resume} download>
               Resume
-            </button> */}
-            <button
-              type="button"
-              class="btn btn-primary"
-              onclick={downloadResume}
-            >
-              Resume
-            </button>
+            </a>
           </div>
 
           <div className="justify-content-end"></div>

@@ -96,6 +96,7 @@ function About() {
             projects.
           </h6>
         </div>
+
         <div>
           <h4 className="mt-3 ml-3" style={{ textDecoration: "underline" }}>
             Skills

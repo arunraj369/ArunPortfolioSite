@@ -48,18 +48,18 @@ function Contact() {
       >
         𝕮𝖔𝖓𝖙𝖆𝖈𝖙
       </h2>
-      <div className="contact-container d-flex flex-row flex-wrap">
-        <div>
+
+      <div className="container d-flex flex-column flex-md-row">
+        <div style={{ width: "100%", maxWidth: "500px", marginRight: "5%" }}>
           <form className="contact-form" ref={form} onSubmit={sendEmail}>
             <h1>Get in touch</h1>
             <p>
-              I'm here to help.if you have question,feedback,please reach out
-              here
+              I'm here to help. If you have questions or feedback, please reach
+              out here.
             </p>
             <label className="form-label" style={{ fontWeight: "bold" }}>
               Your Name
             </label>
-
             <input className="form-input" type="text" name="from_name" />
             <label className="form-label" style={{ fontWeight: "bold" }}>
               Your Email
@@ -74,35 +74,39 @@ function Contact() {
             </button>
           </form>
         </div>
-        <div style={{ display: "inline-block", marginLeft: "5%" }}>
+        <div style={{ width: "100%" }}>
           <h4 style={{ textDecoration: "underline" }}>Direct contact</h4>
-          <h6>Email</h6>
-          {/* <p>rajarun612@gmail.com</p> */}
-          <a href="mailto:rajarun612@gmail.com">rajarun612@gmail.com</a>
-          <h6>Phone No</h6>
-          <a href="tel:8883314331">888-331-4331</a>
-
+          <div className="mb-3">
+            <h6>Email</h6>
+            <a href="mailto:rajarun612@gmail.com">rajarun612@gmail.com</a>
+          </div>
+          <div className="mb-3">
+            <h6>Phone No</h6>
+            <a href="tel:8883314331">888-331-4331</a>
+          </div>
           <h4 style={{ textDecoration: "underline", marginTop: "20px" }}>
             Follow me
           </h4>
-          <h6>Linkedin</h6>
-          {/* <p>linkedin.com/in/arun-raj-b5860917b/</p> */}
-          <a
-            href="https://linkedin.com/in/arun-raj-b5860917b/"
-            target="_blank"
-            rel="noreferrer"
-          >
-            linkedin.com/in/arun-raj-b5860917b
-          </a>
-          <h6>Github</h6>
-          {/* <p>github.com/arunraj369</p> */}
-          <a
-            href="https://github.com/arunraj369"
-            target="_blank"
-            rel="noreferrer"
-          >
-            github.com/arunraj369
-          </a>
+          <div className="mb-3">
+            <h6>Linkedin</h6>
+            <a
+              href="https://linkedin.com/in/arun-raj-b5860917b/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              linkedin.com/in/arun-raj-b5860917b
+            </a>
+          </div>
+          <div>
+            <h6>Github</h6>
+            <a
+              href="https://github.com/arunraj369"
+              target="_blank"
+              rel="noreferrer"
+            >
+              github.com/arunraj369
+            </a>
+          </div>
         </div>
       </div>
     </div>
