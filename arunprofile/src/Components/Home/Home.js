@@ -2,7 +2,7 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import Header from "../Header/Header";
 import "./Home.css";
-// import bg from "../assets/Arunphoto.jpg";
+import bg from "../assets/Arunphoto.jpg";
 
 function Home() {
   const navigate = useNavigate();
@@ -37,7 +37,7 @@ function Home() {
         style={{ color: "white" }}
       >
         <h3 style={{ color: "grey" }}>Hi I'm Arunraj </h3>
-        <h6>
+        <h6 style={{ color: "grey" }}>
           Iam a Fullstack developer based on Salem .I am passionate about
           building high-quality web applications with modern technologies.
         </h6>

@@ -1,5 +1,5 @@
-.navbgcolour {
-  /* border: 1px solid; */
-  padding: 1px;
-  box-shadow: 1px 1px #cadae4;
+.nav-link:hover {
+  transition: transform 350ms;
+  transform: translateY(-10px);
+  text-decoration: underline;
 }

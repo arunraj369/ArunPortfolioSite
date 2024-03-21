@@ -62,14 +62,15 @@ function About() {
           style={{
             textDecoration: "underline",
             textAlign: "center",
-            marginBottom: "3%",
+            marginBottom: "5%",
           }}
         >
           𝖕𝖔𝖗𝖙𝖋𝖔𝖑𝖎𝖔
         </h2>
+
         <div
-          className="card"
-          style={{ border: "none", backgroundColor: "white" }}
+          className="card ml-3"
+          style={{ border: "none", backgroundColor: "white", width: "90%" }}
         >
           <h1>Arunraj V</h1>
           <h6 style={{ color: "#4F7396" }}>Fullstack Developer</h6>
@@ -101,7 +102,7 @@ function About() {
           </h4>
           <div
             className="card-container"
-            style={{ display: "flex", flexWrap: "wrap" }}
+            style={{ display: "flex", flexWrap: "wrap", marginLeft: "3%" }}
           >
             {Object.values(Skills).map((skill) => (
               <div

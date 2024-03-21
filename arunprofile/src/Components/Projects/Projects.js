@@ -55,7 +55,6 @@ function Projects() {
       <Header />
 
       <div className="container" style={{ height: "100%" }}>
-        {/* <h1 style={{ textAlign: "center" }}>Projects</h1> */}
         <h2
           style={{
             textDecoration: "underline",
@@ -65,6 +64,7 @@ function Projects() {
         >
           𝖕𝖗𝖔𝖏𝖊𝖈𝖙
         </h2>
+
         <div className="">
           {Object.values(projects_details).map((Project_data, index) => (
             <div
@@ -91,7 +91,7 @@ function Projects() {
 
                 {/* <h6>Technology used</h6> */}
 
-                <div className="d-flex flex-column ">
+                <div className="d-flex flex-column">
                   {/* <a
                     href={Project_data.Url}
                     className="btn btn-primary"
@@ -110,6 +110,7 @@ function Projects() {
                   </a>
                 </div>
               </div>
+
               <img
                 src={Project_data.Image_link}
                 style={{
@@ -120,12 +121,6 @@ function Projects() {
                 }}
                 alt="No img"
               />
-              {/* <div
-             
-                style={{ marginLeft: "10%", marginTop: "2%" }}
-              >
-              
-              </div> */}
             </div>
           ))}
         </div>

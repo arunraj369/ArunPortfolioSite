@@ -34,7 +34,9 @@ function Contact() {
 
   return (
     <div
-      style={{ backgroundImage: "linear-gradient(to right, white, #E9F1FA)" }}
+      style={{
+        backgroundImage: "linear-gradient(to right, white, #E9F1FA)",
+      }}
     >
       <Header />
       <h2
@@ -46,7 +48,7 @@ function Contact() {
       >
         𝕮𝖔𝖓𝖙𝖆𝖈𝖙
       </h2>
-      <div className="contact-container d-flex flex-row">
+      <div className="contact-container d-flex flex-row flex-wrap">
         <div>
           <form className="contact-form" ref={form} onSubmit={sendEmail}>
             <h1>Get in touch</h1>
