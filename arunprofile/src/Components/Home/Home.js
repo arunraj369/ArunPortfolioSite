@@ -71,13 +71,15 @@ function Home() {
               <h6 className="text-muted">Tamil Nadu</h6>
               <h4 className="mt-3 text-muted">Bio</h4>
               <p className="text-muted">
-                I'm a Fullstack developer with a passion for building beautiful
-                and functional web experiences. Currently, I work at Asm
-                technology in Salem, where I get to wear many hats and work
-                across the stack. I love the process of creating something from
-                nothing and seeing it come to life on the web. In my free time,
-                you can find me exploring the city, trying new coffee shops, or
-                working on side projects.
+                Experienced Full stack developer around 2 years of expertise in
+                MERN and MEAN stack development, adept at crafting robust
+                software solutions. Proven track record of delivering
+                high-quality, scalable applications and thriving in
+                collaborative, cross-functional environments. Skilled in
+                independent problem-solving, leveraging MongoDB, Express.js,
+                Angular, React and Node.js for efficient development. Actively
+                seeking opportunities to contribute to dynamic software projects
+                and drive innovation.
               </p>
             </div>
           </div>
