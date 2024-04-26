@@ -6,48 +6,49 @@ function Home() {
   const Skills = [
     {
       id: 0,
-      name: "Full Stack Development Program",
-      Details: "MERN stack",
+      name: "Full Stack Development",
+      Details: `
+      Experienced in full-stack development with expertise in both MERN and MEAN  stacks, capable of delivering end-to-end solutions.`,
     },
     {
       id: 1,
       name: "UI/UX Program",
-      Details: "Design using Figma and AI tools",
+      Details: `Proficient in design utilizing Figma and AI tools for comprehensive and innovative design solutions.`,
     },
     {
       id: 2,
       name: "JavaScript",
-      Details: "Able to work in JavaScript",
+      Details: `Experienced in JavaScript (ES6) for front-end and back-end development, adept at creating interactive and responsive web applications. `,
     },
     {
       id: 3,
       name: "Python",
-      Details: "Able to work in Python programming",
+      Details: `Skilled in Python for software development, with expertise in building applications for web `,
     },
     {
       id: 4,
       name: "React.js",
-      Details: "Create mobile responsive UI using React.js",
+      Details: `Proficient in React.js for front-end development, specializing in building modern and responsive user interfaces. Experienced in leveraging React.js libraries and tools to develop dynamic and efficient web applications.`,
     },
     {
       id: 5,
       name: "Angular",
-      Details: "Create mobile responsive UI using Angular",
+      Details: `Skilled in Angular for front-end development, adept at creating robust and scalable single-page applications (SPAs). Experienced in utilizing Angular libraries and tools to build dynamic and interactive web interfaces`,
     },
     {
       id: 6,
       name: "Node.js",
-      Details: "For backend, I use Express.js in Node.js to access databases",
+      Details: `Experienced in Node.js for back-end development, specializing in building scalable and efficient server-side applications. Proficient in leveraging Node.js frameworks like Express.js to create RESTful APIs and handle server-side logic.`,
     },
     {
       id: 7,
       name: "SQL",
-      Details: "For table-wise data, I can use SQL databases",
+      Details: `Skilled in SQL for database management and querying, proficient in designing and optimizing relational databases. Experienced in writing complex SQL queries to retrieve and manipulate data efficiently, ensuring robust and scalable data-driven applications.`,
     },
     {
       id: 8,
       name: "MongoDB",
-      Details: "NoSQL database is used MongoDB",
+      Details: `Experienced in MongoDB for NoSQL database management, adept at designing and implementing scalable and flexible data solutions. Proficient in leveraging MongoDB's document-based model to store and retrieve data efficiently, enabling high-performance and dynamic applications.`,
     },
   ];
 
@@ -70,7 +71,7 @@ function Home() {
               <h6 className="text-muted">Fullstack Developer</h6>
               <h6 className="text-muted">Tamil Nadu</h6>
               <h4 className="mt-3 text-muted">Bio</h4>
-              <p className="text-muted">
+              <p className="text-muted" style={{ textAlign: "left" }}>
                 Experienced Full stack developer around 2 years of expertise in
                 MERN and MEAN stack development, adept at crafting robust
                 software solutions. Proven track record of delivering
@@ -105,8 +106,15 @@ function Home() {
               }}
             >
               <div className="card-body">
-                <h6 className="card-title">{skill.name}</h6>
-                <p className="card-text">{skill.Details}</p>
+                <h5
+                  className="card-title"
+                  style={{ textDecoration: "underline" }}
+                >
+                  {skill.name}
+                </h5>
+                <p className="card-text" style={{ textAlign: "left" }}>
+                  {skill.Details}
+                </p>
               </div>
             </div>
           ))}
